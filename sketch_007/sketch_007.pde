@@ -1,14 +1,13 @@
 float f = 0;
 void setup() {
   size(600, 500);
-  colorMode(HSB);
 }
 
 void draw() {
   f += 1;
-  background(0);
-  fill(noise(f) * 255, 255, 255);
-  stroke(255);
+  background(#53354a);
+  fill(#e84545);
+  stroke(#903749);
   for (float y = 100; y < height; y += 5) {
     beginShape();
     for (float x = 0; x < width; x += 1) {
