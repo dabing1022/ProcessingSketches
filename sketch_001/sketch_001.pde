@@ -11,6 +11,10 @@ void setup() {
 }
 
 void draw() {
+  
+}
+
+void draw() {
   // Pick a random point
   int x = int(random(img.width));
   int y = int(random(img.height));
