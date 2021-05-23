@@ -1,10 +1,12 @@
 PImage img;
 int pointillize = 16;
 
+@preload="./1024store_1024pt.png";
+
 void setup() {
   frameRate(200);
   size(700, 700);
-  img = loadImage("1024store_1024pt.png");
+  img = loadImage("./1024store_1024pt.png");
   img.resize(width, height);
   background(0);
   smooth();
