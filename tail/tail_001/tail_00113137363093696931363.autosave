@@ -1,0 +1,15 @@
+void setup() {
+   size(400, 400);
+   colorMode(HSB);
+   background(0);
+}
+
+void draw() {
+    fill(0, 5);
+    noStroke();
+    rect(0, 0, width, height);
+
+    
+    fill(30, 255, 255);
+    circle(mouseX, mouseY, 50);
+}
