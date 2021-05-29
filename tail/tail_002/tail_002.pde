@@ -1,62 +1,31 @@
-ArrayList<Mover> movers = new ArrayList<Mover>();
-
+float r = 0;
+float backR;
+float backG;
+float backB;
+ 
 void setup() {
-  size(800, 800);
-  colorMode(HSB);
-  background(0);
+  size(800, 700);
+  backR = random(0, 100);
+  backG = random(0, 100);
+  backB = random(0, 100); 
+  background(backR, backG, backB);
+  rectMode(CENTER);
+  
+  noStroke();
+  smooth();
 }
-
-void draw() {
-  background(0);
-  for (int i = movers.size() - 1; i >= 0; i--) {
-    Mover mover = movers.get(i);
-    mover.run();
-    if (mover.isDead) {
-      movers.remove(i);
-    }
-  }
+ 
+void draw() { 
+  fill(2, 10);
+  rect(width/2, height/2, width, height);
+  
+  
+  fill(#E3D5A4);
+  translate(mouseX, mouseY);
+  rotate(r);
+  rect(0, 0, 100, 100);
+  r = r + 0.05;
 }
-
-void mouseDragged() {
-  movers.add(new Mover(mouseX, mouseY, 50));
-}
-
-class Mover {
-  float x;
-  float y;
-  float radius;
-  float lifespan;
-  boolean isDead = false;
-
-  Mover(float x, float y, float radius) {
-    this.x = x;
-    this.y = y;
-    this.radius = radius;
-
-    this.lifespan = 255;
-  }
-
-  void run() {
-    update();
-    display();
-  }
-
-  void update() {
-    lifespan -= 12;
-    lifespan = max(lifespan, 0);
-  } 
-
-  boolean isDead() {
-    if (lifespan < 0.0) { 
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  void display() {
-    fill(30, 255, 255, lifespan); 
-    noStroke();
-    circle(x, y, radius);  
-  } 
-}
+ 
+ 
+ 
