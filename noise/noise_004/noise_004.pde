@@ -1,4 +1,7 @@
-String[] imageNames = {"deadpool.jpeg",  //<>// //<>//
+// 参考学习 //<>// //<>//
+// https://openprocessing.org/sketch/1130387
+
+String[] imageNames = {"deadpool.jpeg", 
   "ironman.jpeg",
   "spiderman.png",
   "fangao_xingye.jpeg", 
