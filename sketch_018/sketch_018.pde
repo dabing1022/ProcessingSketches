@@ -73,9 +73,6 @@ void gradientLine(color color1, color color2, float x1, float y1, float x2, floa
     float segTailX = lerp(x1, x2, (i + 1) / segs);
     float segTailY = lerp(y1, y2, (i + 1) / segs);
     line(segHeadX, segHeadY, segTailX, segTailY);
-    fill(c);
-    noStroke();
-    ellipse(segHeadX, segHeadY, lineWeight, lineWeight);
   }
 }
 
