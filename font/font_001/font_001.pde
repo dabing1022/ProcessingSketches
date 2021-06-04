@@ -7,7 +7,7 @@ void setup() {
   //String[] fontList = PFont.list();
   //printArray(fontList);
   
-  PFont f = createFont("HackNerdFontComplete-Regular");
+  PFont f = createFont("HackNerdFontComplete-Regular", 100);
   textFont(f);
   
   textAlign(CENTER, CENTER);
