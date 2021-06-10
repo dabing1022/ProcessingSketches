@@ -32,7 +32,7 @@ void draw() {
   vertex(bottomRightX, 200 + 200);
   
   float bottomLeft = boxAx - 50; // 左下顶点X，比左上顶点X向左偏移50
-  vertex(boxAx - 50, 200 + 200);
+  vertex(bottomLeft, 200 + 200);
   
   endShape(CLOSE);
   // --------- 结束灯光绘制
