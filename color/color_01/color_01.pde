@@ -4,13 +4,15 @@ float r = 100;
 
 void setup() {
   size(500, 500);
-  noLoop();
+  //noLoop();
 }
 
 void draw() {
+  background(255);
+  
   translate(width/2, height/2);
   translate(0, -r);
-  for(float i = 0; i < 2 * r; i++) {
+  for(float i = 0; i < 2 * r; i+=1) {
     float half_line = sqrt(r * r - (i - r) * (i - r));
     float start_x = -half_line;
     float end_x = start_x + 2 * half_line;
