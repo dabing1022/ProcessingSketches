@@ -67,4 +67,3 @@ class CA {
     return 0;
   }
 }
-

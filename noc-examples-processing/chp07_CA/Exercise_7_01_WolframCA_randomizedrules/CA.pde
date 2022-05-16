@@ -13,7 +13,7 @@ class CA {
 
   int[] ruleset;     // An array to store the ruleset, for example {0,1,1,0,1,1,0,1}
 
-  int w = 5;
+  int w = 10;
 
   CA(int[] r) {
     ruleset = r;
@@ -95,4 +95,3 @@ class CA {
     }
   }
 }
-

@@ -51,7 +51,3 @@ void mousePressed() {
   cannon.mult(5);
   m.applyForce(cannon);
 }
-
-
-
-
